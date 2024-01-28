@@ -202,3 +202,13 @@ a {
     border-radius: 200px;
     font-size: 14px !important;
 }
+
+.modal-header > button {
+    background-color: white !important;
+}
+
+@media (max-width: 768px) { 
+    .pb-mt-4 {
+        margin-top: 24px;
+    }
+}
