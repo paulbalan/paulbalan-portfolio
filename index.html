@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paul Balan - Full-Stack Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./imgs/paul.jpeg">
+</head>
+
+<body>
+    <div id="pb-notification" style="display: none;">
+        Copied to clipboard
+    </div>
+
+    <div class="container" id="home">
+        <div class="row">
+            <div class="col-12">
+                <div class="pb-nav">
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#success-stories">Success stories</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 pb-hero">
+                <h1>Paul Balan</h1>
+                <h2>Freelance Full-Stack Developer</h2>
+                <div class="pb-contact-info">
+                    <div onclick="copyEmail()">
+                        <i class="bi bi-envelope"></i>
+                        <span id="pb-copy-email">paulbalan99@gmail.com</span>
+                    </div>
+
+                    <a href="https://www.linkedin.com/in/paulbalan/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                        <span>linkedin.com/in/paulbalan</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p >
+                    Building products for the past 5 years. Working daily with Laravel, Vue and FilamentPHP.
+                </p>
+
+                <p class="pb-heading-text">
+                    Helping software companies achieve their goals alongside their existing in-house team and business owners to craft bespoke solutions for their
+                    needs.
+                </p>
+            </div>
+        </div>
+
+        <!-- Tech stack -->
+        <div class="row mt-2">
+            <div class="col-sm-12 col-md-4">
+                <h2 class="pb-section">Languages</h2>
+
+                <div class="pb-tech-stack-container">
+                    <span>PHP</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>SQL</span>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4">
+                <h2 class="pb-section">Frameworks/Libraries</h2>
+
+                <div class="pb-tech-stack-container">
+                    <span>Laravel</span>
+                    <span>FilamentPHP</span>
+                    <span>InertiaJS</span>
+                    <span>Vue</span>
+                    <span>PrimeVue</span>
+                    <span>Bootstrap</span>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4">
+                <h2 class="pb-section">Tools</h2>
+
+                <div class="pb-tech-stack-container">
+                    <span>MySQL</span>
+                    <span>Docker</span>
+                    <span>RabbitMQ</span>
+                    <span>Laravel Forge</span>
+                    <span>Stripe</span>
+                    <span>Ably</span>
+                    <span>Google Firebase</span>
+                    <span>Amazon S3</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div class="row mt-2" id="services">
+            <div class="col-12">
+                <h2 class="pb-section">Services</h2>
+            </div>
+
+            <div class="col-6">
+                <div class="pb-transparent-block">
+                    <h3>Team augmentation</h3>
+                    <p>
+                        Take the burden off your internal team and ship your products in weeks instead of months.
+                    </p>
+
+                    <p>
+                        It doesn't matter if it's a fresh new project or you just need an extra set of hands, you get the same level of expertise.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="pb-transparent-block">
+                    <h3>Custom project</h3>
+
+                    <p>
+                        Are you a business owner with an idea or a product that needs work?
+                    </p>
+
+                    <p>
+                        Building bespoke solutions that are tailored to your exact needs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <a href="#success-stories">
+                    <div class="pb-btn">
+                        View my success stories
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="row mt-2" id="testimonials">
+            <div class="col-12">
+                <h2 class="pb-section">Testimonials</h2>
+            </div>
+
+            <div class="col-12">
+                <div class="pb-transparent-block">
+                    <h3>Patrice Archer</h3>
+                    <h4>CEO at Appy Ventures</h4>
+                    <p>
+                        Paul is a great team player, developer and person to havein any team. He has a real 'can do' attitude and communicates well.
+                    </p>
+
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#patrice_archer_testimonial">Read more +</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="patrice_archer_testimonial">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span>(click outside the modal window to close)</span>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Paul is a great team player, developer and person to havein any team. He has a real 'can do' attitude and communicates well. We would strongly recommend him as a person and as a developer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-3">
+                <div class="pb-transparent-block">
+                    <h3>Armin Kovači</h3>
+                    <h4>Operations Manager at Appy Ventures</h4>
+                    <p>Paul is a fast learner who adapts quickly to new technologies and methodologies. </p>
+                    <p>I also appreciate his proactive approach to problem-solving. His inclination to ask thoughtful and relevant questions not only demonstrates his in-depth understanding of the technical aspects of the work but also showcases his commitment to delivering optimal solutions.</p>
+                    <p>Regardless of the challenges presented, he consistently meets and exceeds expectations by promptly addressing any issues that arise. </p>
+
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#armin_kovaci_testimonial">Read more +</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="armin_kovaci_testimonial">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span>(click outside the modal window to close)</span>
+                                </div>
+                                <div class="modal-body">
+                                    <p>I am writing to recommend Paul Balan for any future endeavors or opportunities within your organization. As a Product Manager at Appy Ventures, UK I have had the pleasure of working closely with Paul on numerous projects, and I am consistently impressed by his exceptional skills, work ethic, and commitment to excellence.</p>
+                                    <p>Regardless of the challenges presented, he consistently meets and exceeds expectations by promptly addressing any issues that arise. His commitment to the success of the team and the project is evident in his willingness to go above and beyond to ensure that all tasks are completed on time and to the highest standards.</p>
+                                    <p>I also appreciate his proactive approach to problem-solving. His inclination to ask thoughtful and relevant questions not only demonstrates his in-depth understanding of the technical aspects of the work but also showcases his commitment to delivering optimal solutions. His curiosity and ability to identify potential challenges before they arise make him an invaluable asset to any project.</p>
+                                    <p>Paul is a fast learner who adapts quickly to new technologies and methodologies. This quality has proven crucial in our dynamic work environment. His enthusiasm for learning and staying updated on industry best practices is truly commendable.</p>
+                                    <p>I recommend Paul Balan for any position that requires a dedicated, detail-oriented, and fast-learning individual.</p>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-3">
+                <div class="pb-transparent-block">
+                    <h3>Ann Allen</h3>
+                    <h4>Senior Product Manager at Appy Ventures</h4>
+                    <p>
+                        Paul was my right-hand man in delivering a new B2B event booking product for a client in the aerospace industry. From finding workarounds with the off-the-shelf CMS; and researching and implementing the best solutions to meet our client’s needs; to helping review and estimate the future backlog—I could depend on him 100%. 
+                    </p>
+
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#ann_allen_testimonial">Read more +</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="ann_allen_testimonial">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span>(click outside the modal window to close)</span>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Paul was my right-hand man in delivering a new B2B event booking product for a client in the aerospace industry. From finding workarounds with the off-the-shelf CMS; and researching and implementing the best solutions to meet our client’s needs; to helping review and estimate the future backlog—I could depend on him 100%. 
+                                    </p>
+                                    <p>
+                                        When a different product (an existing B2B2C niche wellbeing product in the construction industry) developed a problem in production, Paul stepped in to investigate and found and fixed the source of the problem quickly despite never having worked on the project before. 
+                                    </p>
+                                    <p>
+                                        Paul is exceptionally capable and has a can-do attitude, which really helps to keep clients happy; together with his sense of humour, he is a pleasure to work with and I have immensely enjoyed working with him!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Success stories -->
+        <div class="row mt-2 mb-5" id="success-stories">
+            <div class="col-12">
+                <h2 class="pb-section">Success stories</h2>
+            </div>
+
+            <!-- Single success story -->
+            <div class="col-sm-12 col-md-6">
+                <div class="pb-transparent-block">
+                    <h3>
+                        Helping client in aerospace industry cut down costs and improve efficiency of operations
+                    </h3>
+                    <h4>
+                        AEROSPACE INDUSTRY
+                    </h4>
+
+                    <div class="pb-tech-stack-container mb-3">
+                        <span>PHP</span>
+                        <span>Laravel</span>
+                        <span>FilamentPHP</span>
+                        <span>SendGrid</span>
+                        <span>Ably</span>
+                        <span>MySQL</span>
+                    </div>
+
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#success_story_1">Read more +</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="success_story_1">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span>(click outside the modal window to close)</span>
+                                </div>
+                                <div class="modal-body">
+                                    <h4 class="pb-success-story-section-title">Client goal</h4>
+                                    <p>As a successful business running global events in the aerospace industry, this company’s goal was to cut down the costs associated with an excessively priced (4-figures monthly) and subpar event management software that was lacking core features.</p>
+
+                                    <h4 class="pb-success-story-section-title">What did I do on the project?</h4>
+                                    <p>Created a Minimum Viable Product (MVP) for event booking, alongside a complete Content Management System (CMS).</p>
+                                    <p>The solution allows the client to empower their own clients to take charge of their events. Creating and managing events, from dates and locations to defining the meeting spaces and inviting meeting organisers as well as sending automatic reminders. Features include the ability to upload CSVs of users, viewing schedules of upcoming meetings.</p>
+                                    <p>Alongside the main app, a companion web application was also developed, to be used on-site at events, showcasing the schedule and status of a particular meeting room, updated in real-time.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single success story -->
+            <div class="col-sm-12 col-md-6 mt-4 mt-md-0">
+                <div class="pb-transparent-block">
+                    <h3>
+                        Improving operations costs and scaling by providing solutions for SaaS company in real estate sector
+                    </h3>
+                    <h4>
+                        REAL ESTATE
+                    </h4>
+
+                    <div class="pb-tech-stack-container mb-3">
+                        <span>PHP</span>
+                        <span>Laravel</span>
+                        <span>FilamentPHP</span>
+                        <span>SendGrid</span>
+                        <span>MySQL</span>
+                    </div>
+
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#success_story_2">Read more +</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="success_story_2">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span>(click outside the modal window to close)</span>
+                                </div>
+                                <div class="modal-body">
+                                    <h4 class="pb-success-story-section-title">Client goal</h4>
+                                    <p>As demand for 360° immersive and interactive experiences increased, the company wanted to scale up and move away from its current process which was based on manual input as follows.</p>
+                                    <ul>
+                                        <li>shipping third-party 360° cameras to their clients;</li>
+                                        <li>receiving 360° footage, shot using a third-party mobile application paired with the 360° camera;</li>
+                                        <li>sending the equipment back as well as the footage captured;</li>
+                                        <li>processing it by the company;</li>
+                                        <li>delivering the virtual tour to their client;</li>
+                                    </ul>
+
+                                    <h4 class="pb-success-story-section-title">What did I do on the project?</h4>
+                                    <p>The complete solution included a CMS (Content Management System) for both the company and its clients, as well as a mobile iOS application, utilizing the latest LiDAR sensors for the iPhone or iPad to capture a 360° 3D snapshot of a space.</p>
+                                    <p>The input from my side was the development of the backend technology to support the functionalities of the iOS application such as property and floor management or storage for assets, tridimensional models and floor plans.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single success story -->
+            <div class="col-sm-12 col-md-6 mt-4 mt-md-4">
+                <div class="pb-transparent-block">
+                    <h3>
+                        Social media mobile application with a focus on organising events and chatting with friends
+                    </h3>
+                    <h4>
+                        MEDIA
+                    </h4>
+
+                    <div class="pb-tech-stack-container mb-3">
+                        <span>PHP</span>
+                        <span>Laravel</span>
+                        <span>MySQL</span>
+                        <span>Amazon S3</span>
+                        <span>Ably</span>
+                        <span>Google Firebase</span>
+                        <span>SendGrid</span>
+                    </div>
+
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#success_story_3">Read more +</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="success_story_3">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span>(click outside the modal window to close)</span>
+                                </div>
+                                <div class="modal-body">
+                                    <h4 class="pb-success-story-section-title">Client goal</h4>
+                                    <p>Considering the fact that social media space is very competitive, the company wanted to take a different route, that aims to bring back the users to in person private and public events, while at the same time offering the technology to support event management.</p>
+
+                                    <h4 class="pb-success-story-section-title">What did I do on the project?</h4>
+                                    <p>I was responsible for developing the backend technology to support the ability to invite other users to the app and add them as friends, as well as creating friend groups, live chat directly in the app to chat with friends, schedule events or receive push notification for various actions inside the app.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single success story -->
+            <div class="col-sm-12 col-md-6 mt-4 mt-md-4">
+                <div class="pb-transparent-block pb-next-project">
+                    <span>Your next project...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        let notification = document.getElementById('pb-notification');
+
+        function copyEmail() {
+            let email = document.getElementById('pb-copy-email');
+            navigator.clipboard.writeText(email.innerHTML);
+            notification.style.display = 'block';
+
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 1500);
+        }
+    </script>
+</body>
+
+</html>
